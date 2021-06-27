@@ -1,6 +1,6 @@
-const xyz = require ('./people')
+const {people, ages , os} = require ('./people')
 
 
 
 
-console.log(xyz)
+console.log(people , ages ,os.platform(),os.homedir() )
