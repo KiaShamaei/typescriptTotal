@@ -1,14 +1,13 @@
-import React from 'react'
+import {Name} from '../General.type'
 type PersonListProps = {
-    nameList: {
-        first: string,
-        last: string
-    }[]
+   nameList :Name[]
 }
-const PersonList = (props: PersonListProps) => {
+
+//this tipes for props 
+const PersonList = ({nameList}: PersonListProps) => {
     return (
         <>
-    {props.nameList.map(m=>{
+    {nameList.map(m=>{
         return <h3 key={m.first}>{m.first}-----{m.last}</h3>
     })}
         </>
